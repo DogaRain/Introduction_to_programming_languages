@@ -1,10 +1,10 @@
 ﻿Console.WriteLine("Imput first number");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Imput first number");
+Console.WriteLine("Imput second number");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Imput first number");
+Console.WriteLine("Imput third number");
 int num3 = Convert.ToInt32(Console.ReadLine());
 
 int max = num1;
