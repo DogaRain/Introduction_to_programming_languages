@@ -4,9 +4,9 @@ int count = 2;
 if (num > 0)
 {
    
-    while (count <= num)
+    while (count < num)
         {
-        Console.WriteLine($"{count}");
+        Console.Write($"{count}, ");
         count = count + 2;
         }
 }
@@ -14,9 +14,10 @@ if (num > 0)
 else
 {
     num = num - 1;
-        while (count <= num)
+        while (count < num)
         {
-        Console.WriteLine($"{count}");
+        Console.Write($"{count}, ");
         count = count + 2;
         }
 }
+Console.Write($"{num}");
