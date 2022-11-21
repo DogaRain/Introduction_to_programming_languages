@@ -7,7 +7,7 @@ int FindBiggestDigit (int num)
 {
     int ed = num % 10;
     int dec = num / 10;
-    if (ad > dec)
+    if (ed > dec)
     {
         return ed;
     }
@@ -20,3 +20,6 @@ int FindBiggestDigit (int num)
 int random = new Random().Next(10, 100);
 
 int result = FindBiggestDigit(random);
+
+Console.WriteLine($"your number -> {random}");
+Console.WriteLine($"The biggest digit -> {result}");
