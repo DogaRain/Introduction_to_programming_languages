@@ -10,6 +10,6 @@
     }
 
 }
-int random = new Random().Next(1, 7);
+int random = new Random().Next(1, 8);
 main (random);
 Console.WriteLine($"{random} - {main(random)}");
