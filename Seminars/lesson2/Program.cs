@@ -47,7 +47,7 @@ Console.WriteLine($"New version of {random} is {newNumber}");*/
 //34, 5 -> не кратно, остаток 4
 //16, 4 -> кратно
 
-void main (int num1, int num2)
+/*void main (int num1, int num2)
 {
     if (num1 % num2 == 0)
     {
@@ -62,4 +62,24 @@ void main (int num1, int num2)
 }
 int random1 = new Random().Next(1,100);
 int random2 = new Random().Next(1,100);
-main(random1, random2);
+main(random1, random2);*/
+
+//4 Задача.Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
+
+//14 -> нет
+//46 -> нет
+//161 -> да
+
+/*bool main (int num1)
+{
+    if (num1 % 7 == 0 && num1 % 23 == 0)
+    {
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+}
+int random = new Random().Next(1,1000);
+Console.WriteLine($"{main(random)} - {random}");*/
