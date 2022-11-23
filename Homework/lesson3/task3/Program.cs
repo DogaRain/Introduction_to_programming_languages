@@ -5,6 +5,6 @@
         Console.WriteLine($"{i} -> {i * i * i}");
     }
 }
-Console.WriteLine("Введите число");
+Console.WriteLine("Imput a number to cube it");
 int N = Convert.ToInt32(Console.ReadLine());
 SqrAll(N);
