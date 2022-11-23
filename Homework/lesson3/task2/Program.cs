@@ -1,7 +1,8 @@
 ﻿double FindLegth(double x1, double y1, double z1, double x2, double y2, double z2)
 {
     double Len = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) + (z2 - z1) * (z2 - z1));
-    return Len;
+    double Len2 = Math.Round(Len, 2);
+    return Len2;
 }
 Console.WriteLine("Введите номер координат X1");
 int x1 = Convert.ToInt32(Console.ReadLine());
