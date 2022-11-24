@@ -1,17 +1,21 @@
 ﻿void FindThirdNum (int num)
 {
-    if (num > 99 && num < 1000)
+    if (num > 99)
     {
-        int num2 = num % 10;
-        Console.WriteLine($"third num -> {num2}");  
+        while (num > 999)
+        {
+            num = num / 10;  
+        }
+        num = num % 10;
+        Console.Write($"the third digit -> {num}, ");
     }
     else
     {
        Console.WriteLine("not a three-digit number");
     }
 }
-int random = new Random().Next(1, 1000);
+int random = new Random().Next(1, 100000);
 
 FindThirdNum (random);
 
-Console.WriteLine($"Your number -> {random}");
+Console.Write($"Your number -> {random}");
