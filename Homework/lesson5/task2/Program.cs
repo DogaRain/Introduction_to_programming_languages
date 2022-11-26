@@ -18,11 +18,12 @@ void ShowArray (int[] array)
 }
 int SumOddIndx(int[] array)
 {
-    sum = 0;
-    for (int i = 1; i < length; i = i + 2)
+    int sum = 0;
+    for (int i = 1; i < array.Length; i = i + 2)
     {
         sum = sum + array[i];
     }
+    Console.WriteLine($"sum numbers of odd index is {sum}");
     return sum;
 }
 Console.WriteLine ("Input array size");
@@ -33,4 +34,4 @@ Console.WriteLine ("Input array max");
 int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandArray(a,min,max);
 ShowArray(myArray);
-ShowArray(InvertArray(myArray));
+SumOddIndx(myArray);
