@@ -16,7 +16,7 @@ void ShowArray (int[] array)
         Console.Write(array[i]+" ");
     }
 }
-int[] EvenNumbers (int[] array)
+void EvenNumbers (int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -27,10 +27,9 @@ int[] EvenNumbers (int[] array)
         }
     }
     Console.WriteLine($"in array {count} even numbers");
-    return array;
 }
 Console.WriteLine ("Input array size");
 int a = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandArray(a);
 ShowArray(myArray);
-Console.WriteLine(EvenNumbers(myArray));
+EvenNumbers(myArray);
