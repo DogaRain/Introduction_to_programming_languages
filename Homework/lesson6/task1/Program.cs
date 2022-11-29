@@ -1,10 +1,10 @@
-﻿int[] CreateRandArray (int size, int minValue, int maxValue)
+﻿int[] CreateRandArray (int size)
 {
     int [] newArray = new int [size];
     for (int i = 0; i < size; i++)
     {
-        newArray[i] = new Random().Next(minValue, maxValue+1);
-        
+        Console.WriteLine ($"Input array number {i+1}");
+        newArray[i] = Convert.ToInt32(Console.ReadLine()); 
     }
     return newArray;
 }
@@ -30,10 +30,6 @@ void PositiveNumbers (int[] array)
 }
 Console.WriteLine ("Input array size");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Input array min");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("Input array max");
-int c = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateRandArray(a,b,c);
+int[] myArray = CreateRandArray(a);
 ShowArray(myArray);
 PositiveNumbers(myArray);
